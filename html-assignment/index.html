@@ -3,23 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Add a CSS file to your website -->
+    <link rel="stylesheet" href="design.css">
     <title>Kevon Senior</title>
 </head>
 <body>
     <!-- Add a site header with your name as the main heading of the site -->
     <header>
-        <h1>Kevon A. Senior</h1>
+        <h1 class="site-title">Kevon A. Senior</h1>
         
         <!-- Add navigation to index.html and notes.html pages to navigate between them -->
-        <a href="index.html">HOME</a> <br> <br>
-        <a href="notes.html">NOTES</a>
+        <nav id="nav-bar">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="notes.html">NOTES</a></li>
+            </ul>
+        </nav>
         <hr>
     </header>
 
     <main>
         <br><br>
         <!-- Add an image of yourself in the images folder and display it on the page -->
-        <img src="images/kevon.jpeg" alt="Photo of Kevon" width="1000">
+        <img src="images/kevon.jpeg" alt="Photo of Kevon" width="1000" id="my-image">
 
         <!-- Add an article with heading About Me -->
         <article>
@@ -40,7 +46,7 @@
         <section>
             <h3>Hobbies</h3>
             <p>My hobbies include:</p>
-            <ul>
+            <ul class="hobbies">
                 <li>Photography</li>
                 <li>Ice Skating</li>
                 <li>Listening Music</li>
