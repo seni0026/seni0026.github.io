@@ -4,7 +4,7 @@ body {
 }
 
 /* Select multiple elements - select both header and footer elements and add the same background colour */
-header, footer { 
+header, footer {        
     background-color: #4EC28F;
 }
 
