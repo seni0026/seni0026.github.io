@@ -1,3 +1,110 @@
-::background-he{
-    
+body {
+    background-color: #aad4cf;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 16px;
+}
+h1 {
+    font-size: 29px;
+}
+
+/* Styling the main container for the website */
+#container {
+    background-color: #D4E9E7;
+    margin: 0 auto;
+    width: 1411px;
+    overflow: hidden;
+}
+
+/* Styling the header */
+.starfish-banner{
+    width: 100%;
+}
+.site-title {
+    font-size: 64px;
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    margin-top: 282px;
+    margin-left: 520px;
+}
+
+/* Styling the navigation bar */
+#nav-bar {
+    text-align: center;
+}
+#nav-bar a {
+    text-decoration: none;
+ 
+    font-size:  26px;
+}
+#nav-bar li {
+    display: inline-block;
+    border-right: #000 1px solid;
+    padding-top: 15px;
+    padding-left: 135px;
+    padding-right: 135px;
+}
+#nav-bar li:last-child {
+    border-right: none;
+}
+
+/* Styling the main content */
+#main-content {
+    margin: 0 12px 0 12px;
+}
+.starfish-details {
+   margin-top: 53px;
+   margin-bottom: 38px;
+}
+.starfish-life {
+    width: 250px;
+    height: 260px;
+    float: left;
+    margin-right: 21px;
+}
+article h1 {
+    padding-bottom: 23px;
+}
+article p {
+    margin-right: 23px;
+    line-height: 22pt;
+    font-size: 17px;
+}
+.starfish-facts {
+    padding-bottom: 32px;
+}
+.starfish-facts h1 {
+    padding-bottom: 21px;
+}
+.starfish-facts li {
+   list-style: disc;
+   list-style-position: outside;
+   margin-left: 12px;
+}
+
+/* Styling the contact form */
+.contact-form {
+    margin-bottom: 36px;
+}
+.contact-form h1 {
+    padding-bottom: 19px;
+}
+.starfish-form {
+    padding: 36px 16px 16px;
+    border: #000 1px solid;;
+}
+#send {
+    background-color: #D4E9E7;
+    border: #000 1px solid;
+    padding: 14px 12px 14px 12px;
+}
+#firstname, #email, #message{
+    width: 100%;
+}
+
+/* Styling the footer */
+footer {
+    text-align: right;
+    padding-right: 33px;
+    padding-bottom: 38px;
 }
