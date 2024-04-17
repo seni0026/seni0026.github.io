@@ -1,0 +1,549 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Styling Body Tag */
+body {
+    font-family: "Open Sans", sans-serif;
+    background-color: white;
+}
+
+h1 {
+    font-size: 76px;
+    line-height: 1.5;
+    font-weight: bold;
+    color: white;
+}
+
+h2 {
+    font-size: 51px;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 34px;
+    font-weight: bold;
+}
+
+p {
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Set the size for the container */
+.container {
+    width: 730px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #222;
+    padding: 16px;
+}
+
+.logo {
+    background-color: #c78c06;
+}
+
+.logo img {
+    width: 72px;
+}
+
+/* Use grid to layout the Navigation */
+.nav-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    align-items: center;
+    justify-items: center;
+    gap: 55px;
+}
+
+.nav-list li a{
+    color: #c78c06;
+    font-size: 19px;
+}
+
+.nav-list li a:active {
+    color: #00ADDB;
+}
+
+.nav-list li:hover {
+    background-color: #c78c06;
+}
+
+.nav-list a:hover {
+    color: black;
+}
+
+.current li a {
+    background-color: #c78c06;
+    color: #000;
+}
+
+.search-bar {
+    width: 100%;
+    padding-top: 27px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.search {
+    height: 45px;
+    width: 100%;
+}
+
+.search-btn {
+    width: 45px;
+    height: 45px;
+    background-color: transparent;
+    border: 1px solid #c78c06;
+}
+
+.fa-magnifying-glass {
+    color: #c78c06;
+    font-size: 26px;
+}
+
+input::placeholder {
+    font-size: 19px;
+}
+
+.welcome {
+    background-image: url("./images/main-banner.jpg");
+    height: 650px;
+    position: relative;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+
+.welcome p {
+    padding-top: 56px;
+    padding-bottom: 21px;
+}
+
+.greeting-message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(0, 0, 0, 0.6);
+    width: 100%;
+    color: white;
+    height: 500px;
+}
+
+.btn-arrow {
+    padding-left: 25px;;
+}
+
+.plans .btn-arrow {
+    color: white;
+}
+
+.lets-connect .btn-arrow {
+    color: rgb(0, 0, 0);
+}
+
+.lets-connect {
+    background-color: #c78c06;
+    border: none;
+    width: 276px;
+    height: 100px;
+    font-size: 23px;
+}
+
+.lets-connect a {
+    color: #222;
+}
+
+#about {
+    background-color: #ffe6ac;
+}
+
+.about-section {
+    padding-top: 15px;
+    padding-bottom: 36px;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-section img {
+    padding-bottom: 46px;
+}
+
+.about-section h2 {
+    padding-bottom: 40px;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    gap: 15px;
+}
+
+.services-offered {
+    background-color: #ffe6ac;
+}
+
+#our-services {
+    margin-bottom: 30px;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 15px;
+    padding-left: 16px;
+}
+
+.description h3 {
+    padding-bottom: 33px;
+}
+
+.description p {
+    padding-bottom: 22px;
+}
+
+.service-img {
+    width: 100%;
+    padding-bottom: 46px;
+}
+
+.service-title {
+    padding-top: 60px;
+    padding-bottom: 31px;
+}
+
+.plans {
+    background-color: #222;
+    width: 230px;
+    height: 100px;
+    border: none;
+    font-size: 23px;
+}
+
+.plans a {
+    color: white;
+}
+
+#our-vision {
+    background-image: url("./images/vision.jpg");
+    background-size: cover;
+    height: 350px;
+    position: relative;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+
+.vision {
+    color: white;
+}
+
+.vision h2 {
+    padding-top: 52px;
+    padding-bottom: 36px;
+}
+
+.vision p {
+    padding-bottom: 20px;
+}
+
+.learn-more {
+    background-color: #11253d;
+    border: 1px solid #c78c06;
+    height: 100px;
+    width: 230px;
+}
+
+.learn-more a {
+    color: white;
+    font-size: 23px;
+}
+
+.team-members {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.member {
+    background-color: #ffe6ac;
+}
+
+.member .headshot {
+    width: 100%;
+    padding-bottom: 35px;
+}
+
+hr {
+    border: 1px solid #c78c06;
+}
+
+.member-info {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.member-info h3 {
+    padding-bottom: 17px;
+    font-weight: bolder;
+}
+
+.member-info h4 {
+    font-weight: bolder;
+}
+
+.member-info p {
+    padding-top: 24px;;
+    padding-bottom: 35px;
+}
+
+#contact {
+    margin-top: 90px;
+    margin-bottom: 30px;
+}
+
+.form-head {
+    padding-top: 50px;
+    padding-bottom: 25px;
+}
+
+.field {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.field {
+    height: 35px;
+}
+
+#message {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.send-btn {
+    width: 65px;
+    height: 35px;
+    background-color: #222;
+    border: none;
+    color: #c78c06;
+    font-size: 23px;
+    margin-bottom: 32px;
+}
+
+table {
+    width: 100%;
+    border: 1px solid #000;
+    margin-top: 21px;
+}
+
+td {
+    border: 1px solid #000;
+    height: 55px;
+    padding-left: 16px;
+    padding-top: 25px;
+}
+
+th {
+    background-color: #ffe6ac;
+    height: 55px;
+    padding: 14px;
+    border: 1px solid #000;
+}
+
+.map iframe {
+    width: 100%;
+    height: 450px;
+}
+
+.map h3 {
+    margin-top: 37px;
+    padding-bottom: 20px;
+}
+
+footer {
+    background-color: #222;
+    margin-top: 20px;
+}
+
+.copyright {
+    padding-top: 39px;
+    padding-bottom: 21px;
+    color: #c78c06;
+}
+
+.footer-link {
+    text-decoration: underline;
+    color: #c78c06;
+}
+
+/******************* CSS for Desktop *******************/
+
+@media screen and (min-width: 760px) {
+    .container {
+        width: 1200px;
+        margin: 0 auto;
+    }
+
+    h1 {
+        font-size: 67px;
+        line-height: 1.5;
+        font-weight: bold;
+        color: white;
+    }
+
+    h2 {
+        font-size: 46px;
+        font-weight: bold;
+    }
+
+    .logo {
+        width: 84px;
+        height: 84px;
+        float: left;
+        margin-top: 30px;
+        margin-bottom: 30px;
+
+    }
+
+    nav {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+    }
+
+    .nav-list {
+        display: flex;
+        flex-direction: row;
+        margin-top: 65px;
+        margin-bottom: 65px;
+        margin-left: 97px;
+        width: 100%;
+    }
+
+    .nav-list li {
+        margin-right: 57px;
+    }
+    
+    .search-bar {
+        width: 200px;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+
+    .welcome {
+        background-image: url("./images/main-banner.jpg");
+        background-size: cover;
+        height: 504px;
+        position: relative;
+        background-repeat: no-repeat;
+        margin: 0 auto;
+    }
+
+    .greeting-message {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgb(0, 0, 0, 0.7);
+        width: 1200px;
+        color: white;
+        height: 421px;
+    }
+    
+    .lets-connect {
+        background-color: #c78c06;
+        border: none;
+        width: 276px;
+        height: 100px;
+        font-size: 23px;
+        margin-top: 14px;
+    }
+
+    .about-section img {
+        width: 480px;
+        height: 242px;
+        margin-right: 14px;
+        padding-bottom: 0;
+    }
+
+    .about-info {
+        float: right;
+        margin-right: 130px;
+        margin-bottom: 0;
+    }
+
+    .about-section {
+        display: flex;
+        flex-direction: row;
+        padding-top: 14px;
+    }
+
+    .about-section h2 {
+        padding-bottom: 35px;
+    }
+
+    .services {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.services:nth-child(1) {
+    margin-left: 500px;
+}
+
+.team-members {
+    width: 977px; 
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 0;
+}
+
+.john .member-info {
+    margin-top: 25px;
+}
+
+.bob .member-info {
+    margin-top: 26px;
+}
+
+.member .headshot {
+    width: 488px;
+    height: 327px;
+    padding-bottom: 0;
+}
+
+.john .headshot {
+    float: left;
+    margin-right: 11px;
+}
+
+.bob .headshot {
+    float: right;
+    margin-left: 16px;
+}
+
+.operation {
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(61, 1fr);
+}
+
+/* Styling the Map */
+.map iframe {
+    width: 480px;
+    height: 376px;
+}
+
+}
